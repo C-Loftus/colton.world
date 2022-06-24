@@ -1,0 +1,93 @@
+	<!-- <script src="js/three.js">
+	</script>
+		
+	<script type="module" src="js/test.js">
+	</script> -->
+
+	<!-- {{ $js := resources.Get "ts/test.ts" | js.Build }}
+	<script src="{{ $js.Permalink }}"></script> -->
+	<!-- <div class='scene'></div> -->
+<!-- doctype html -->
+
+<!DOCTYPE html>    
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<div id="header-full"></div>
+<div id="navbar-full">
+	<ul class="nav">
+		{{ range .Pages}}
+		<li class="no-bullets">
+			<a href="{{.RelPermalink}}"> {{.Title}} </a>
+		</li>
+		 {{ end }}
+
+	</ul>
+</div>
+<div id="main-container">
+
+	<h1>
+		{{ .Site.Title }}
+	</h1>
+	<div id="header-contained"></div>
+	<div id="navbar-contained">
+		<ul class="nav">
+			{{ range .Pages}}
+			<li class="no-bullets">
+				<a href="{{.RelPermalink}}"> {{.Title}} </a>
+			</li>
+			 {{ end }}
+			 <li class="no-bullets">
+				<a href="https://element.colton.world"> Matrix Chat </a>
+			</li>
+		</ul>
+	</div>
+	<div class="content-wrap flex alignment">
+		<div id="right-sidebar">
+			<div class="sidebar-wrapper">Left Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+ Erat nam at lectus urna duis
+				convallis convallis tellus id. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Urna et
+				pharetra pharetra massa massa ultricies mi.</div>
+		</div>
+		<div id="content-container">
+			<div class="wrapper">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+				ut labore et dolore magna aliqua. Venenatisas sed tempus urna et. Nisl vel
+				pretium lectus quam id leo in. Ornare arcu odio ut sem nulla pharetra diam Nisl vel
+ pretium lectus quam id leo in. Ornare arcu odio ut sem nulla phas sed tempus urna et. Nisl vel
+ pretium lectus quam id leo in. Ornare arcu odio ut sem nulla pharetra diamas sed tempus urna et. Nisl vel
+ pretium lectus quam id leo in. Ornare arcu odio ut sem nulla pharetra diamas sed tempus urna et. Nisl vel
+ pretium lectus quam id leo in. Ornare arcu odio ut sem nulla pharetra diamas sed tempus urna et. Nisl vel
+ pretium lectus quam id leo in. Ornare arcu odio ut sem nulla pharetra diamas sed tempus urna et. Nisl vel
+ pretium lectus quam id leo in. Ornare arcu odio ut sem nulla pharetra diamas sed tempus urna et. Nisl vel
+ pretium lectus quam id leo in. Ornare arcu odio ut sem nulla pharetra diamaretra diamas sed tempus urna et. Nisl vel
+ pretium lectus quam id leo in. Ornare arcu odio ut sem nulla pharetra diamas sed tempus urna et. Nisl vel
+ pretium lectus quam id leo in. Ornare arcu odio ut sem nulla pharetra diamas sed tempus urna et. Nisl vel
+ pretium lectus quam id leo in. Ornare arcu odio ut sem nulla pharetra diamas sed tempus urna et. Nisl vel
+ pretium lectus quam id leo in. Ornare arcu odio ut sem nulla pharetra diam
+				pretium lectus quam id leo in. Ornare arcu odio ut sem nulla pharetra diam. Dictum sit amet justo donec enim
+				diam vulputate ut. Et malesuada fames ac turpis egestas maecenas.</div>
+		</div>
+		<div id="left-sidebar">
+			<div class="sidebar-wrapper">Right Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulputate eu scelerisque. Duis
+mod. Erat nam at lectus urna duis
+				convallis convallis tellus id. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Urna et
+				pharetra pharetra massa massa ultricies mi.
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="footer-wrapper">
+
+		<a href="/license "> Legal </a>
+		</div>
+	</div>
+</div>
+
+</html>

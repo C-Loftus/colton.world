@@ -1,0 +1,5 @@
+baseURL = 'https://colton.world'
+languageCode = 'en-us'
+title = 'colton.world'
+pluralizeListTitles= false
+assetDir = "static"

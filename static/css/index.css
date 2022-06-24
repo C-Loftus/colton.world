@@ -1,0 +1,201 @@
+@import "nord.css";
+
+:root {
+    /* These variables exist so you can make quick and simple style changes without much CSS knowledge */
+
+    /* applies to all areas */
+    --font-family: sans-serif;
+    --font-size: 14px;
+    --line-height: 1.3em;
+    --font-color: var(--light1);
+    --link-color: var(--dark1);
+    --link-text-decoration: underline;
+
+    /* main content (between sidebars) */
+    --content-padding: 25px;
+
+    /* header */
+    --header-height: 150px;
+    --header-background: url('/mountain.png');
+    --header-margin-bottom: 10px;
+    --header-margin-top: 10px;
+
+    /* sidebar */
+    --sidebar-margin: 10px;
+    --sidebar-width: 150px;
+    --sidebar-padding: 15px;
+    --sidebar-bg-color: var(--dark4);
+
+    /* footer */
+    --footer-height: 30px;
+    --footer-bg-color: var(--blue3);
+
+    /* navbar */
+    --navitems-alignment: center;
+    --space-between-navitems: 20px;
+    --navbar-margin-bottom: 10px;
+    --nav-bg-color: var(--blue3);
+
+    /* container */
+    --container-width: 800px;
+
+    /* controls the gap between the content and the footer */
+    --row-gap: 5px;
+
+    /* To add scrollbars to your sidebars, just make the height a px value and change overflow to 'auto' */
+    --sidebar-overflow: hidden;
+    --background-color: var(--dark2);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--font-color);
+    text-align: center;
+}
+
+body a {
+    color: var(--link-color);
+    font-weight: bold;
+    text-decoration: var(--link-text-decoration);
+}
+
+#main-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    background-color: var(--background-color);
+    /* position: absolute; */
+    /* left: 50%;
+    top: 50%; 
+    -webkit-transform: translate(-50%, -50%); 
+     transform: translate(-50%, -50%); */
+}
+
+.flex {
+    display: flex;
+    margin-bottom: var(--row-gap);
+}
+
+.content-wrap {
+    margin-top: var(--content-margin-top);
+
+}
+
+#content-container {
+    width: 60%;
+    margin-bottom: var(--row-gap);
+    background-color: var(--sidebar-bg-color);
+    display: flex; 
+}
+
+#right-sidebar {
+    width: var(--sidebar-width);
+    margin: var(--sidebar-margin);
+    overflow: var(--sidebar-overflow);
+    background-color: var(--sidebar-bg-color);
+    flex: 1;
+}
+
+#left-sidebar {
+    width: var(--sidebar-width);
+    margin: var(--sidebar-margin);
+    overflow: var(--sidebar-overflow);
+    background-color: var(--sidebar-bg-color);
+    flex: 1;
+}
+
+#header-contained {
+    height: var(--header-height);
+    margin-bottom: var(--header-margin-bottom);
+    margin-top: var(--header-margin-top);
+    background-image: var(--header-background);
+    background-position: center center;
+}
+
+#footer {
+    height: var(--footer-height);
+    text-align: center;
+    color: var(--font-color);
+    background-color: var(--footer-bg-color);
+}
+
+#header-full {
+    display: none;
+    height: var(--header-height);
+    margin-bottom: var(--header-margin-bottom);
+    background-image: var(--header-background);
+    background-position: center center;
+}
+
+#navbar-contained {
+    margin-bottom: var(--row-gap)
+    
+}
+
+#navbar-full {
+    display: none;
+}
+
+.nav {
+    margin-left: 0;
+    text-align: var(--navitems-alignment);
+    margin-top: 0;
+    margin-bottom: var(--navbar-margin-bottom);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: var(--nav-bg-color);
+}
+
+.nav li {
+    display: inline-block;
+    padding-right: var(--space-between-navitems);
+}
+
+.wrapper {
+    padding: var(--content-padding);
+    padding-top: var(--sidebar-padding);
+}
+
+.sidebar-wrapper {
+    padding: var(--sidebar-padding);
+    height: var(--sidebar-height);
+    overflow: var(--sidebar-overflow);
+}
+
+.footer-wrapper {
+    padding: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    #left-sidebar {
+        width: 100%;
+        display: block;
+        order: 2;
+        margin: 10px;
+    }
+
+    #right-sidebar {
+        width: 100%;
+        display: block;
+        order: 3;
+        margin-left: 0;
+    }
+
+    #content-container {
+        width: 100%;
+        display: block;
+        order: 1;
+        margin-bottom: 10px;
+    }
+}
+
+
