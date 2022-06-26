@@ -1,18 +1,35 @@
-:root{
-  --dark1  :  #2e3440;
-  --dark2  :  #3b4252;
-  --dark3  :  #434c5e;
-  --dark4  :  #4c566a;
- --light1  :  #d8dee9;
- --light2  :  #e5e9f0;
- --light3  :  #eceff4;
-  --blue1  :  #8fbcbb;
-  --blue2  :  #88c0d0;
-  --blue3  :  #81a1c1;
-  --blue4  :  #5e81ac;
-    --red  :  #bf616a;
- --orange  :  #d08770;
- --yellow  :  #ebcb8b;
-  --green  :  #a3be8c;
- --purple  :  #b48ead;
+/* This file contains only style info */
+
+:root {
+  --dark1: #2e3440;
+  --dark2: #3b4252;
+  --dark3: #434c5e;
+  --dark4: #4c566a;
+  --light1: #d8dee9;
+  --light2: #e5e9f0;
+  --light3: #eceff4;
+  --blue1: #8fbcbb;
+  --blue2: #88c0d0;
+  --blue3: #81a1c1;
+  --blue4: #5e81ac;
+  --red: #bf616a;
+  --orange: #d08770;
+  --yellow: #ebcb8b;
+  --green: #a3be8c;
+  --purple: #b48ead;
+
+
+  --font-color: var(--light3);
+  --link-color: var(--dark2);
+  --header-background: url('/mountain.png');
+  --footer-bg-color: var(--blue3);
+  --nav-bg-color: var(--blue3);
+  --sidebar-bg-color: var(--dark4);
+  --background-color : url('/swirl.png');
+  /* --background-color : var(--dark3); */
+
+  --font-color: var(--light3);
+  --code-color: var(--dark3);
+  --highlight-color : var(--yellow);
+  --links: var(--green);
 }

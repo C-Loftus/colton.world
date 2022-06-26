@@ -5,8 +5,6 @@ draft: false
 tags: ["games", "stepmania", "ddr"]
 # categories: ["test"]
 ---
-## How to install Stepmania on Linux
-
 First you should install flatpak. If you are unfamiliar flatpak is a way to package Linux applications for easier use across distributions. You can also build from source but you are more likely to run into an issue and not all distributions are well documented for building. To install flatpak go to https://flatpak.org/setup/ . Then  once you have flatpak installed run the following command.
 ```
 flatpak install flathub com.stepmania.StepMania

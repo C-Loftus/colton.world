@@ -1,0 +1,18 @@
+:root {
+    --purple-black: #1B2430;
+    --dark-violet: #51557E;
+    --violet: #816797;
+    --off-white: #D6D5A8;
+
+
+    --font-color: var(--off-white);
+    --link-color: var(--dark2);
+    --header-background: url('/mountain.png');
+    --footer-bg-color: var(--violet);
+    --nav-bg-color: var(--violet);
+    --sidebar-bg-color: var(--dark-violet);
+    --background-color : var(--purple-black);
+    --font-color: var(--light3);
+    --hover-color: var(--off-white);
+
+}

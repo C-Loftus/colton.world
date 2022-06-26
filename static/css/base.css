@@ -1,0 +1,88 @@
+/* These file contains text styles relevant to all pages */
+
+@import "nord.css";
+
+:root {
+    /* applies to all areas */
+    --font-family: sans-serif;
+    --font-size: 14px;
+    --line-height: 1.3em;
+    --link-text-decoration: underline;
+
+    /* main content (between sidebars) */
+    --content-padding: 25px;
+
+    /* header */
+    --header-height: 150px;
+    --header-margin-bottom: 10px;
+    --header-margin-top: 10px;
+
+    /* sidebar */
+    --sidebar-margin: 10px;
+    --sidebar-width: 150px;
+    --sidebar-padding: 15px;
+
+    /* footer */
+    --footer-height: 30px;
+
+    /* navbar */
+    --navitems-alignment: center;
+    --space-between-navitems: 20px;
+    --navbar-margin-bottom: 10px;
+
+    /* container */
+    --container-width: 800px;
+
+    /* controls the gap between the content and the footer */
+    --row-gap: 5px;
+
+    /* To add scrollbars to your sidebars, just make the height a px value and change overflow to 'auto' */
+    --sidebar-overflow: hidden;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    overflow: auto;
+    background: var(--background-color);
+
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
+
+
+.box {
+    height: fit-content;
+    max-width:500px;
+    word-wrap:break-word;
+    margin-bottom: 10px;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+}
+
+.list {
+    height: fit-content;
+    max-width:500px;
+    word-wrap:break-word;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+a {
+    color: var(--links);
+}
+

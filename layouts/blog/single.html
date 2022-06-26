@@ -1,3 +1,22 @@
 {{define "main"}}
+<link rel="stylesheet" href="/css/article.css">
+
+<h2> {{.Title}}</h2>
+<article>
     {{.Content}}   
+
+</article>
+<br>
+<div class="list">
+    <a href="#">Back to the top </a> 
+    <br>
+    <a href="/blog"> View other articles </a>
+    <br>
+    <i> Tags for this article:  </i>
+    {{ range $i, $e := .Params.tags -}}
+        {{- if $i -}}, {{ end -}}
+        <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
+    {{- end -}} 
+</div>
+
 {{end}}

@@ -1,0 +1,34 @@
+{{define "main"}}
+{{.Content}}
+
+<h2> My Articles </h2>
+{{ range .Pages}}
+<div class="box">
+    <a href="{{.RelPermalink}}"> {{.Title}} </a>
+    <br>
+    <br>
+    <i> {{ .Summary }} ... </i>
+    <br>
+        <!-- {{ range .Params.tags }}
+        <a href="/"></a>
+        {{ end }}
+        <i> Tags : </i> 
+        {{ range $i, $e := .Params.tags -}}
+        {{- if $i -}}, {{ end -}}
+        <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
+    {{- end -}} -->
+    <br>
+</div>
+{{ end }}
+<br>
+<br>
+    <h3> Article Tags </h3>
+    <div class="list">
+        <a href="/blog"> All articles </a>
+        <br>
+        {{ range .Site.Taxonomies.tags }}
+        <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}, 
+        {{ end }}
+    </div>
+
+{{end}}

@@ -1,61 +1,8 @@
-@import "nord.css";
+@import "base.css";
 
-:root {
-    /* These variables exist so you can make quick and simple style changes without much CSS knowledge */
-
-    /* applies to all areas */
-    --font-family: sans-serif;
-    --font-size: 14px;
-    --line-height: 1.3em;
-    --font-color: var(--light1);
-    --link-color: var(--dark1);
-    --link-text-decoration: underline;
-
-    /* main content (between sidebars) */
-    --content-padding: 25px;
-
-    /* header */
-    --header-height: 150px;
-    --header-background: url('/mountain.png');
-    --header-margin-bottom: 10px;
-    --header-margin-top: 10px;
-
-    /* sidebar */
-    --sidebar-margin: 10px;
-    --sidebar-width: 150px;
-    --sidebar-padding: 15px;
-    --sidebar-bg-color: var(--dark4);
-
-    /* footer */
-    --footer-height: 30px;
-    --footer-bg-color: var(--blue3);
-
-    /* navbar */
-    --navitems-alignment: center;
-    --space-between-navitems: 20px;
-    --navbar-margin-bottom: 10px;
-    --nav-bg-color: var(--blue3);
-
-    /* container */
-    --container-width: 800px;
-
-    /* controls the gap between the content and the footer */
-    --row-gap: 5px;
-
-    /* To add scrollbars to your sidebars, just make the height a px value and change overflow to 'auto' */
-    --sidebar-overflow: hidden;
-    --background-color: var(--dark2);
-}
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    line-height: var(--line-height);
-    color: var(--font-color);
     text-align: center;
 }
 
@@ -65,15 +12,15 @@ body a {
     text-decoration: var(--link-text-decoration);
 }
 
+ul  {
+    padding-left: 0;
+    text-align: left;
+  }
+
+
 #main-container {
     max-width: var(--container-width);
     margin: 0 auto;
-    background-color: var(--background-color);
-    /* position: absolute; */
-    /* left: 50%;
-    top: 50%; 
-    -webkit-transform: translate(-50%, -50%); 
-     transform: translate(-50%, -50%); */
 }
 
 .flex {
@@ -93,15 +40,9 @@ body a {
     display: flex; 
 }
 
-#right-sidebar {
-    width: var(--sidebar-width);
-    margin: var(--sidebar-margin);
-    overflow: var(--sidebar-overflow);
-    background-color: var(--sidebar-bg-color);
-    flex: 1;
-}
 
-#left-sidebar {
+
+#sidebar {
     width: var(--sidebar-width);
     margin: var(--sidebar-margin);
     overflow: var(--sidebar-overflow);
@@ -124,12 +65,17 @@ body a {
     background-color: var(--footer-bg-color);
 }
 
+#footer :hover{
+    color: var(--yellow);
+}
+
 #header-full {
     display: none;
     height: var(--header-height);
     margin-bottom: var(--header-margin-bottom);
     background-image: var(--header-background);
     background-position: center center;
+
 }
 
 #navbar-contained {
@@ -156,6 +102,12 @@ body a {
     padding-right: var(--space-between-navitems);
 }
 
+.nav li :hover {
+    color: var(--highlight-color);
+}
+
+
+
 .wrapper {
     padding: var(--content-padding);
     padding-top: var(--sidebar-padding);
@@ -176,18 +128,11 @@ body a {
         flex-wrap: wrap;
     }
 
-    #left-sidebar {
+    #sidebar {
         width: 100%;
         display: block;
-        order: 2;
         margin: 10px;
-    }
-
-    #right-sidebar {
-        width: 100%;
-        display: block;
-        order: 3;
-        margin-left: 0;
+        order: 2;
     }
 
     #content-container {

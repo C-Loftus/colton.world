@@ -2,6 +2,7 @@
 title: "Linux Hands-Free Accessibility"
 date: 2022-06-01T19:06:34-04:00
 draft: false
+tags: ["linux", "software", "accessibility", "programming"]
 ---
  In this post I hope to show some of my opinions on the state of hands free accessibility on Linux.  Many of these software choices and setup decisions are platform agnostic, but I am primarily focused on Linux. Most of these tools are intended to be used by people who are otherwise able boded besides their hands or arms. 
  ## General Principles

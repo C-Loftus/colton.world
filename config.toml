@@ -3,3 +3,4 @@ languageCode = 'en-us'
 title = 'colton.world'
 pluralizeListTitles= false
 assetDir = "static"
+summaryLength = 5
