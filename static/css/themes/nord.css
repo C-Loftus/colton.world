@@ -21,15 +21,15 @@
 
   --font-color: var(--light3);
   --link-color: var(--dark2);
-  --header-background: url('/mountain.png');
+  --header-background: url('/images/mountain.png');
   --footer-bg-color: var(--blue3);
   --nav-bg-color: var(--blue3);
   --sidebar-bg-color: var(--dark4);
-  --background-color : url('/swirl.png');
-  /* --background-color : var(--dark3); */
+  --background-color : url('/images/test.png');
+  --article: var(--dark1);
 
-  --font-color: var(--light3);
   --code-color: var(--dark3);
   --highlight-color : var(--yellow);
   --links: var(--green);
+  --box-bg: rgba(0, 0, 0, 0.4);
 }

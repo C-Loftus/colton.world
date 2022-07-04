@@ -1,7 +1,5 @@
 /* These file contains text styles relevant to all pages */
 
-@import "nord.css";
-
 :root {
     /* applies to all areas */
     --font-family: sans-serif;
@@ -53,17 +51,16 @@ html {
     line-height: var(--line-height);
 }
 
-
 .box {
     height: fit-content;
-    max-width:500px;
+    max-width:700px;
     word-wrap:break-word;
     margin-bottom: 10px;
     top: 50%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.4);
+    background: var(--box-bg);
     border-radius: 15px;
 }
 
@@ -78,6 +75,10 @@ html {
     text-align: center;
 }
 
+.box > a, .box > i {
+    font-size: medium;
+}
+
 h1, h2, h3, h4 {
     text-align: center;
 }
@@ -86,3 +87,11 @@ a {
     color: var(--links);
 }
 
+button {
+
+    display: inline-block;
+    width: auto;
+    color: var(--links);
+    z-index:1000;
+    top: 20px;
+}

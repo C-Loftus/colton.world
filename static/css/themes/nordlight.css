@@ -1,0 +1,36 @@
+:root {
+    --dark : #003b4e;
+    --test : #e64569;
+    --green : #069f5f;
+    --test : #dab752;
+    --blue : #439ecf;
+    --purple : #d961dc;
+    --turq : #00b1be;
+    --grey : #b3b3b3;
+    --dark-turq : #3e89a1;
+    --test : #e4859a;
+    --test : #a2cca1;
+    --test : #e1e387;
+    --light-blue : #6fbbe2;
+    --test : #e586e7;
+    --seafoam : #96dcda;
+    --light : #dedede;
+
+
+
+  --font-color: var(--dark);
+  --link-color: var(--dark);
+  --header-background: url('/images/mountain.png');
+  --footer-bg-color: rgba(0, 0, 0, 0.05);
+  --nav-bg-color: rgba(0, 0, 0, 0.05);
+  --sidebar-bg-color: rgba(0, 0, 0, 0.05);
+  --background-color: var(--light);
+
+  --article: var(--light);
+
+  --code-color: rgba(0, 0, 0, 0.1);
+  --highlight-color : var(--blue);
+  --links: var(--dark);
+  --box-bg: rgba(0, 0, 0, 0.05);
+
+}

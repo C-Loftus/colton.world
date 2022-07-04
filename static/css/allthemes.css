@@ -1,0 +1,69 @@
+:root {
+    --nord-dark1: #2e3440;
+    --nord-dark2: #3b4252;
+    --nord-dark3: #434c5e;
+    --nord-dark4: #4c566a;
+    --nord-light1: #d8dee9;
+    --nord-light2: #e5e9f0;
+    --nord-light3: #eceff4;
+    --nord-blue1: #8fbcbb;
+    --nord-blue2: #88c0d0;
+    --nord-blue3: #81a1c1;
+    --nord-blue4: #5e81ac;
+    --nord-red: #bf616a;
+    --nord-orange: #d08770;
+    --nord-yellow: #ebcb8b;
+    --nord-green: #a3be8c;
+    --nord-purple: #b48ead;
+  
+  
+    --nord-font-color: var(--nord-light3);
+    --nord-link-color: var(--nord-dark2);
+    --nord-header-background: url('/images/mountain.png');
+    --nord-footer-bg-color: var(--nord-blue3);
+    --nord-nav-bg-color: var(--nord-blue3);
+    --nord-sidebar-bg-color: var(--nord-dark4);
+    --nord-background-color : url('/images/test.png');
+    --nord-article: var(--nord-dark1);
+    --nord-code-color: var(--nord-dark3);
+    --nord-highlight-color : var(--nord-yellow);
+    --nord-links: var(--nord-green);
+    --nord-box-bg: rgba(0, 0, 0, 0.4);
+
+
+
+    
+
+    --nordlight-dark : #003b4e;
+    --nordlight-test : #e64569;
+    --nordlight-green : #069f5f;
+    --nordlight-test : #dab752;
+    --nordlight-blue : #439ecf;
+    --nordlight-purple : #d961dc;
+    --nordlight-turq : #00b1be;
+    --nordlight-grey : #b3b3b3;
+    --nordlight-dark-turq : #3e89a1;
+    --nordlight-test : #e4859a;
+    --nordlight-test : #a2cca1;
+    --nordlight-test : #e1e387;
+    --nordlight-light-blue : #6fbbe2;
+    --nordlight-test : #e586e7;
+    --nordlight-seafoam : #96dcda;
+    --nordlight-light : #dedede;
+
+
+
+  --nordlight-font-color: var(--nordlight-dark);
+  --nordlight-link-color: var(--nordlight-dark);
+  --nordlight-header-background: url('/images/mountain.png');
+  --nordlight-footer-bg-color: rgba(0, 0, 0, 0.05);
+  --nordlight-nav-bg-color: rgba(0, 0, 0, 0.05);
+  --nordlight-sidebar-bg-color: rgba(0, 0, 0, 0.05);
+  --nordlight-background-color: var(--nordlight-light);
+  --nordlight-article: var(--nordlight-light);
+  --nordlight-code-color: rgba(0, 0, 0, 0.1);
+  --nordlight-highlight-color : var(--nordlight-blue);
+  --nordlight-links: var(--nordlight-dark);
+  --nordlight-box-bg: rgba(0, 0, 0, 0.05);
+
+  }

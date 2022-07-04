@@ -1,25 +1,9 @@
-	<!-- <script src="js/three.js">
-	</script>
-		
-	<script type="module" src="js/test.js">
-	</script> -->
+{{define "head"}}
+<link rel="stylesheet" href="/css/index.css">
+{{end}}
 
-	<!-- {{ $js := resources.Get "ts/test.ts" | js.Build }}
-	<script src="{{ $js.Permalink }}"></script> -->
-	<!-- <div class='scene'></div> -->
-<!-- doctype html -->
 
-<!DOCTYPE html>    
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/css/index.css">
-	<title> {{ .Site.Title }} </title>
-</head>
-
+{{define "main"}}
 <div id="header-full"></div>
 <div id="navbar-full">
 	<ul class="nav">
@@ -27,7 +11,7 @@
 		<li class="no-bullets">
 			<a href="{{.RelPermalink}}"> {{.Title}} </a>
 		</li>
-		 {{ end }}
+		{{ end }}
 
 	</ul>
 </div>
@@ -40,17 +24,17 @@
 	<div id="navbar-contained">
 		<ul class="nav">
 			{{ range .Pages}}
-				{{ if ne .Title "" }}
-				<li class="no-bullets">
+			{{ if ne .Title "" }}
+			<li class="no-bullets">
 
-				<a href="{{.RelPermalink}}"> 
-				{{ .Title }}
-				{{ end }}
+				<a href="{{.RelPermalink}}">
+					{{ .Title }}
+					{{ end }}
 				</a>
 			</li>
 
-			 {{ end }}
-			 <li class="no-bullets">
+			{{ end }}
+			<li class="no-bullets">
 				<a href="https://element.colton.world"> Matrix Chat </a>
 			</li>
 		</ul>
@@ -58,21 +42,24 @@
 	<div class="content-wrap flex alignment">
 		<div id="sidebar">
 			<div class="sidebar-wrapper">Left Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
- Erat nam at lectus urna duis
-				convallis convallis tellus id. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Urna et
+				Erat nam at lectus urna duis
+				convallis convallis tellus id. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla.
+				Urna et
 				pharetra pharetra massa massa ultricies mi.</div>
 		</div>
 		<div id="content-container">
 			<div class="wrapper">
 
-				{{ .Content}}
+				{{ .Content }}
 			</div>
 		</div>
 		<div id="sidebar">
 			<div class="sidebar-wrapper">Right Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulputate eu scelerisque. Duis
-mod. Erat nam at lectus urna duis
-				convallis convallis tellus id. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Urna et
+				tempor incididunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulputate eu scelerisque.
+				Duis
+				mod. Erat nam at lectus urna duis
+				convallis convallis tellus id. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla.
+				Urna et
 				pharetra pharetra massa massa ultricies mi.
 			</div>
 		</div>
@@ -80,9 +67,17 @@ mod. Erat nam at lectus urna duis
 	<div id="footer">
 		<div class="footer-wrapper">
 
-		<a href="/license "> Legal </a>
+			<select name="Theme", id="theme-switch">
+				<option value="none" selected disabled hidden>Select an Option</option>
+				{{ range $key, $value := .Site.Params.backgrounds}}
+				
+				<option value=”{{ $key }}”> {{ $key }} </option>
+			
+				{{end}}
+			</select>
+			<a href="/license "> License </a>
 		</div>
 	</div>
 </div>
 
-</html>
+{{end}}

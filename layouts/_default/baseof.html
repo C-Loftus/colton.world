@@ -5,7 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Site.Title }} </title>
-    <link rel="stylesheet" href="/css/base.css">
+
+   {{ $defaultTheme := .Site.Params.defaultTheme }}
+    {{ $defaultPath := print "/css/themes/" $defaultTheme ".css" }}
+
+ 
+    <link rel="stylesheet" href="/css/base.css" media="all">
+
+    <link rel="stylesheet" href="/css/allthemes.css" media="all">
+    
+    <script src="/js/loadTheme.js"> </script>
+    {{block "head" .}}
+    {{end}}
+
+
+    <style>
+		html {
+			background-color: {{ index .Site.Params.backgrounds $defaultTheme }};
+		}
+	</style>
 </head>
 <body>
     {{block "main" .}}

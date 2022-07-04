@@ -4,3 +4,7 @@ title = 'colton.world'
 pluralizeListTitles= false
 assetDir = "static"
 summaryLength = 5
+[params]
+  defaultTheme = 'nordlight'
+  backgrounds = { nord = "#3b4252", nordlight = "#dedede" }
+  

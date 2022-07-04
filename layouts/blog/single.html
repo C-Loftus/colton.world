@@ -1,22 +1,17 @@
-{{define "main"}}
+{{ define "head" }}
 <link rel="stylesheet" href="/css/article.css">
+<script src="/js/copy.js" defer>
+</script>
+{{ end }}
 
+{{define "main"}}
 <h2> {{.Title}}</h2>
 <article>
     {{.Content}}   
-
+    <br>
 </article>
 <br>
-<div class="list">
-    <a href="#">Back to the top </a> 
-    <br>
-    <a href="/blog"> View other articles </a>
-    <br>
-    <i> Tags for this article:  </i>
-    {{ range $i, $e := .Params.tags -}}
-        {{- if $i -}}, {{ end -}}
-        <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'>{{ $e | humanize }}</a>
-    {{- end -}} 
-</div>
+
+{{ partial "textFooter.html" .}}
 
 {{end}}

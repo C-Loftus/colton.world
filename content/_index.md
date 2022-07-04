@@ -5,12 +5,13 @@ draft: false
 ---
 
 ### Hi there, I'm Colton. I am an interdisciplinary programmer with interests in
-*  technology accessibility
-*   Linux
-*  federated and free (libre) software
+* technology accessibility
+* Linux
+* federated and free (libre) software
+* agricultural technology
 
 
 In my spare time I enjoy 
-*  rhythm games
-*  reading books about religion and philosophy
-*  
+* rhythm games
+* reading books about religion and philosophy
+* gardening

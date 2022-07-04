@@ -1,12 +1,13 @@
 article {
-    background: var(--dark1);
+    background: var(--article);
     border-radius: 15px;
     margin: 1em;
     padding: 1em;
-    border: 1px solid var(--dark1);
+    border: 1px solid var(--article);
     left: auto;
     word-wrap: break-word;
 }
+
 
 body {
     font-size: 16px;
@@ -23,7 +24,7 @@ body {
         padding: 2px;
     }
     article {
-        margin: 1px;
+        margin: 4px;
         padding: 3px;
     }
     
@@ -47,6 +48,7 @@ span.code {
     padding-right: 0.2em;
     word-wrap: break-word;
     page-break-inside: avoid;
+    display: inline-block;
 }
 
 
@@ -64,6 +66,19 @@ pre {
     display: block;
     word-wrap: break-word;
 }
+
+.verticalText {
+    float:left;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: small;
+    margin-right: 10px;
+}
+
+pre:active {
+    background: var(--box-bg);
+}
+
 
 li, i {
     text-align: center;

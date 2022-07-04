@@ -3,7 +3,7 @@ title: "How to Setup Stepmania on Linux"
 date: 2022-06-21T20:10:41-04:00
 draft: false
 tags: ["games", "stepmania", "ddr"]
-# categories: ["test"]
+summary: "In this article I will show how to install stepmania and get it set up with the proper files for characters and songs"
 ---
 First you should install flatpak. If you are unfamiliar flatpak is a way to package Linux applications for easier use across distributions. You can also build from source but you are more likely to run into an issue and not all distributions are well documented for building. To install flatpak go to https://flatpak.org/setup/ . Then  once you have flatpak installed run the following command.
 ```
